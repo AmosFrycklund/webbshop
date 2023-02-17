@@ -1,3 +1,6 @@
+body{
+  background-color: #C7B99E;
+}
 *{
     margin: 0px;
 }
@@ -10,6 +13,8 @@
 #Titel{
     display: flex;
     align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     font-size: 5vh;
 }
 .varor{
@@ -34,7 +39,7 @@
     display: flex;
     width: 25%;
     height: 73vh;
-    background-color: #d6d6d6;
+    background-color: #ad9f82;
     align-items: center;
     flex-direction: column;
     border: black;
@@ -76,7 +81,7 @@
     transition: 0.5s;
     padding-top: 60px;
   }
-  #tittel{
+  #titelvara{
     font-size: 4vh;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
