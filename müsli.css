@@ -178,7 +178,6 @@ body{
   object-fit: contain;
   padding: 10px;
 }
-/*slutrahamnskit*/
 .sidenav {
     height: 100%;
     width: 0;
@@ -249,4 +248,38 @@ body{
     height: 15vh;
     justify-content: space-around;
   }
+}
+@media (max-width: 1080px){
+  .nav {
+      padding: 15px;
+  }
+  section{
+      padding: 3rem 0 2rem;
+  }
+  .container{
+      margin: 0 auto;
+      width: 90%;
+  }
+  .shop{
+      margin-top: 2rem !important;
+  }
+}
+@media (max-width: 400px){
+  .nav {
+      padding: 11px;
+  }
+  .logo{
+      font-size: 1rem;
+  }
+  .cart{
+      width: 320px;
+  }   
+}
+@media (max-width: 400px){
+  .shop{
+      margin-top: 2rem !important;
+  }
+  .cart{
+      width: 280px;
+  } 
 }

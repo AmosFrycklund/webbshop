@@ -6,6 +6,7 @@
     width: 100%;
 }
 .Müsli-big{
+    display: flex;
     height: 100%;
     width: 100%;
     background-image: url(Müsli2.jpg);
@@ -54,6 +55,12 @@
   @media screen and (max-width: 530px){
     .Müsli-big{
       background-size: 200% 130%;
+      background-position: center;
+    }
+  }
+  @media screen and (max-width: 340px){
+    .Müsli-big{
+      background-size: 300% 130%;
       background-position: center;
     }
   }
