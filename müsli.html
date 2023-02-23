@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="müsli.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="container">
@@ -14,7 +15,6 @@
             <a href="index.html">Meny</a>
             <a href="müsli.html">Varor</a>
             <a href="omoss.html">Om oss</a>
-            <a href="#">Varukorgen</a>
           </div>
           <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
           
@@ -27,51 +27,67 @@
             document.getElementById("mySidenav").style.width = "0";
           }
           </script>
+<!--FIx this shit-->
+<div class="nav container">
+    <i class='bx bx-shopping-bag' id="cart-icon"></i>
+    <!--cart-->
+    <div class="cart">
+        <!--cart close-->
+        <i class='bx bx-x' id="close-cart"></i>
+        <h2 class="cart-title">Din varukorg</h2>
+        <!--content-->
+        <div class="cart-content">
+
+        </div>
+        <!--total-->
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0</div> 
+        </div> 
+        <!--buy button-->
+        <button type="button" class="btn-buy">Köp</button>
+    
+    </div>
+</div>
+<!--Fix this shit-->
         <p id="Titel">Müsli</p>
+        
         <div class="varor">
             <div class="müsli">
                 <div class="litenskärm">
-                <div class ="bild"></div>
+                    <img src="produkt.jpg" alt="" class="product-img">
                 <div class="info">
-                    <p id="titelvara">Vitalis Müsli</p>
+                    <h2 class="product-title">Vitalis Nut</h2>
                     <p id="undertext">Innehåller spår av nötter</p>
+                    <span class="price">$400</span>
                 </div>
                 </div>
-                <a href="venne">
-                    <div class="knapp">
-                        <p id="text">Lägg i kundvagn</p>
-                    </div>
-                </a>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
             <div class="müsli">
                 <div class="litenskärm">
-                <div class ="bild"></div>
+                    <img src="produkt2.jpg" alt="" class="product-img">
                 <div class="info">
-                    <p id="titelvara">Vitalis Müsli</p>
-                    <p id="undertext">Innehåller spår av nötter</p>
+                    <h2 class="product-title">Vitalis No Nut</h2>
+                    <p id="undertext">Innehåller ej spår av nötter</p>
+                    <span class="price">$300</span>
                 </div>
                 </div>
-                <a href="venne">
-                    <div class="knapp">
-                        <p id="text">Lägg i kundvagn</p>
-                    </div>
-                </a>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
             <div class="müsli">
                 <div class="litenskärm">
-                <div class ="bild"></div>
+                    <img src="produkt3.png" alt="" class="product-img">
                 <div class="info">
-                    <p id="titelvara">Vitalis Müsli</p>
-                    <p id="undertext">Innehåller spår av nötter</p>
+                    <h2 class="product-title">Vitalis Suprise</h2>
+                    <p id="undertext">Innehåller kanske spår av nötter</p>
+                    <span class="price">$800</span>
                 </div>
                 </div>
-                <a href="venne">
-                    <div class="knapp">
-                        <p id="text">Lägg i kundvagn</p>
-                    </div>
-                </a>
+                <i class='bx bx-shopping-bag add-cart'></i>
             </div>
         </div>
     </div>
+    <script src="varor.js"></script>
 </body>
 </html>
